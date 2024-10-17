@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veen's Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Cart window HTML -->
+
+<div class="cart-modal" id="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close">&times;</span>
+      <h2>Cart</h2>
+      <ul class="cart-list" id="cart-list"></ul>
+      <p class="total-cost" id="total-cost"></p>
+      <button class="continue-to-purchase" id="continue-to-purchase">Continue to Purchase</button>
+      <button class="remove-all-items" id="remove-all-items">Remove All Items</button>
+    </div>
+  </div>
+        <button onclick="location.href='account-creation.html'">sign up</button>
+        <button class="login" onclick="location.href='login.html'">Login</button>
+        <nav class="category-nav">
+            <ul>
+                <li><a href="#women">Women's Wear</a></li>
+                <li><a href="#men">Men's Wear</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#kids">Kids' Wear</a></li>
+                <li>
+                    <a href="#" class="view-cart">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <img src="https://cdn-imgs.dora.run/design/IPLd8nnzuOcKe3OTl8tnGF.webp/w/4096/h/4096/format/webp?" alt="Hero Image">
+            </div>
+            <div class="hero-content">
+                <h1>Unleash Your Personal Style</h1>
+                <p>Discover the latest fashion trends and must-haves at our online store.</p>
+                <button class="" href="New-Arrivals.html">Shop New Arrivals</button>
+                <p class="social-proof">"Love this store! Great selection and fast shipping." - Emily R.</p>
+            </div>
+        </section>
+        <section class="products">
+            <h2 id="women">Women's Wear</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="women-wear-1.jpeg" alt="Product 1">
+                    <h3>Women's Official Wears</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Womens-Official-Wears.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="women-wear-2.jpeg" alt="Product 5">
+                    <h3>Women's Casual Wears</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                     <a href="Womens-Casual-Wear.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="ladies-wear.jpg" alt="Product 1">
+                    <h3>Dresses</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Dresses.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="heels-1.jpeg" alt="Product 5">
+                    <h3>Shoes</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Womens-Shoes.html" class="view-more">View More</a>
+                </div>
+                <!-- Add more product cards for women's fashion here -->
+            </div>
+        
+            <h2 id="men">Men's Wear</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="Men's-wear-1.jpg" alt="Product 2">
+                    <h3>Men's official wears</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                     <a href="Men.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="khaki collection.jpeg" alt="Product 6">
+                    <h3>Men's Casual Wears</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Men-Casual.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="polo.jpeg" alt="Product 1">
+                    <h3>Shirts and T shirts</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Men-Shirts.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="black shoes.jpeg" alt="Product 5">
+                    <h3>Shoes</h3>>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Men-Shoes.html" class="view-more">View More</a>
+                </div>
+                <!-- Add more product cards for men's fashion here -->
+            </div>
+        
+            <h2 id="kids">Kids' Wear</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="kids-1.jpeg" alt="Product 3">
+                    <h3>Shirts and T shirts</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Kids.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Kids-2.jpeg" alt="Product 3">
+                    <h3>Trousers</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Kids-Trouser.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Kids-3.jpeg" alt="Product 3">
+                    <h3>Uniforms</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Kids.Uniform.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Kids-4.jpeg" alt="Product 5">
+                    <h3>Shoes</h3>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <a href="Kid.Shoes.html" class="view-more">View More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
